@@ -1,3 +1,5 @@
-shows
+shows/*
+!shows/*/
+shows/*/*
+!shows/*/config.yaml
 *.csv
-

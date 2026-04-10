@@ -1,0 +1,26 @@
+# Badge sheet config for The Sound of Music 2026
+# Run from the repo root: python3 generate_sheets.py shows/2026_The_Sound_of_Music/config.yaml
+
+orientation: landscape
+
+front_art: "FINAL SoM Bag Tag - (Front).svg"
+back_art: "FINAL 2026 SoM Bag Tag (Back.Blank).svg"
+names_csv: "../../names.csv"
+
+output_dir: "output"
+
+name_style:
+  font_family: "Sour Gummy"
+  font_color: "#0194e9"     # blue for student names
+  shadow_color: "#000000"   # black shadow, matches designer's style
+  shadow_offset: 1.370      # art-space units; measured from designer sample
+  font_weight: "normal"
+  base_font_size: 24        # art-space units; auto-shrinks for long names
+  min_font_size: 10
+
+  # Name placement in art-coordinate space (badge viewBox is 0 0 252 180).
+  # The Running Dog Productions logo+text occupies approximately y=23-80.
+  # Increase first_name_y / last_name_y to move names lower on the badge.
+  name_center_x: 126   # horizontal center (252 = full badge width)
+  first_name_y: 110    # baseline y for first name
+  last_name_y:  140    # baseline y for last name
