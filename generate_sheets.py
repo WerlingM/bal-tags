@@ -166,8 +166,8 @@ def load_names(csv_path: Path) -> list[tuple[str, str]]:
             if not full:
                 continue
             parts = full.split(None, 1)
-            first = parts[0]
-            last = parts[1] if len(parts) > 1 else ""
+            first = parts[0].upper()
+            last = parts[1].upper() if len(parts) > 1 else ""
             names.append((first, last))
     return names
 
