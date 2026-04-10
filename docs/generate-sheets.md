@@ -46,8 +46,9 @@ The CSV file has a single header row followed by one full name per row:
 
 ```
 Sound of Music Cast and Crew
-Defne Aksoy
-Ashleigh Allen
+Firstname Lastname
+Joan Collins
+Patrick Stewart
 …
 ```
 
