@@ -21,6 +21,8 @@ name_style:
   # Name placement in art-coordinate space (badge viewBox is 0 0 252 180).
   # The Running Dog Productions logo+text occupies approximately y=23-80.
   # Increase first_name_y / last_name_y to move names lower on the badge.
-  name_center_x: 126   # horizontal center (252 = full badge width)
+  # name_center_x: 162 centers the name on the "RUNNING DOG PRODUCTIONS" text
+  #   (the text portion spans x≈85–238; full badge center would be 126).
+  name_center_x: 162   # horizontal center aligned to RDP text region
   first_name_y: 110    # baseline y for first name
   last_name_y:  140    # baseline y for last name
