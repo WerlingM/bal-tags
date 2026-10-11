@@ -1,0 +1,25 @@
+# Badge sheet config for 2026 States
+# Run from the repo root: python3 generate_sheets.py shows/2026_States/config.yaml
+
+orientation: landscape
+
+front_art: "2026 STATES bag tag - (Front).svg"
+back_art:  "2026 STATES bag tag - (Back).svg"
+names_csv: "names.csv"
+
+output_dir: "output"
+
+name_style:
+  font_family: "Sour Gummy"
+  font_color: "#69D84F"     # fresh green for student names
+  shadow_color: "#000000"   # black shadow
+  shadow_offset: 1.370      # art-space units
+  font_weight: "normal"
+  base_font_size: 24
+  min_font_size: 10
+
+  # Name placement in art-coordinate space (badge viewBox 0 0 252 180).
+  # Via /analyze-art: center graphic occupies y~35-122, so names sit below it.
+  name_center_x: 126   # horizontal center
+  first_name_y: 134    # baseline y for first name — clears graphic bottom (122)
+  last_name_y:  162    # baseline y for last name — clears bottom border (169.3)
